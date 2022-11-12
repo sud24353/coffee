@@ -302,7 +302,7 @@ cleared and transported to designated warehouse in Oklahoma City
           <div class="container">
             <div class="row">
     
-              <div class="col-lg-12 col-md-12 footer-contact" style="text-align: center;">
+              <div class="col-lg-6 col-md-6 footer-contact" style="text-align: center;">
                 <h3>Aria Cafe</h3>
                 <p>
                   Okhlahoma,
@@ -311,7 +311,15 @@ cleared and transported to designated warehouse in Oklahoma City
                   <strong>Email:</strong>arialogixusa@gmail.com<br>
                 </p>
               </div>
-    
+              <!-- <div id="reader" class="col-lg-6 col-md-6 footer-contact" style="text-align: center;">
+              </div> -->
+              <div  class="col-lg-6 col-md-6 footer-contact" style="text-align: center;">                
+                <input type="hidden" value="8984008571" id="myInput">
+                <img id='barcode' onclick=copyText() src="img/ariaLogix/qr-code.png" alt="" width="200" height="160" style="cursor: pointer;"/>
+                <p id="click">Click to copy phone number</p>
+                <p id="copy" style="display: none; color: rgb(59, 125, 59);">phone number copied...</p>
+              </div>
+
               <!-- <div class="col-lg-6 col-md-6 footer-links" style="text-align: end;">
                 <h4>Our Social Networks</h4>
                 <p>You can reach out to us using below handles.</p>
@@ -353,8 +361,28 @@ cleared and transported to designated warehouse in Oklahoma City
 
 
   <!-- Template Main JS File -->
+  <!-- <script src="js/html5-qrcode.min.js"></script> -->
   <script src="js/main.js"></script>
-
+  <script>
+    function copyText() 
+    {
+      console.log('aya')
+       // Get the text field
+      var copyText = document.getElementById("myInput");
+      // Select the text field
+      copyText.select();
+      //copyText.setSelectionRange(0, 99999); // For mobile devices
+      // Copy the text inside the text field
+      navigator.clipboard.writeText(copyText.value);
+      // Alert the copied text
+      document.getElementById('click').style.display = 'none'
+      document.getElementById('copy').style.display = 'block'
+      setTimeout(() => {
+        document.getElementById('click').style.display = 'block'
+        document.getElementById('copy').style.display = 'none'
+      }, 5000)
+    }
+  </script>
 </body>
 
 </html>
