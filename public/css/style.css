@@ -19,7 +19,7 @@ a {
 }
 
 a:hover {
-  color: #73c5eb;
+  color: #6F4E37;
   text-decoration: none;
 }
 
@@ -105,7 +105,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #6bc1e9;
+  background: #6F4E37;
   color: #fff;
 }
 
@@ -176,7 +176,7 @@ h6 {
   padding: 10px 0 10px 30px;
   font-size: 15px;
   font-weight: 500;
-  color: #DAD7D6;s
+  color: #DAD7D6;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -211,7 +211,7 @@ h6 {
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #31a9e1;
+  background: #6F4E37;
 }
 
 .navbar .dropdown ul {
@@ -314,7 +314,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(40, 58, 90, 0.9);
+  /* background: rgba(40, 58, 90, 0.9); */
   transition: 0.3s;
   z-index: 999;
 }
@@ -330,11 +330,12 @@ h6 {
   position: absolute;
   top: 55px;
   right: 15px;
-  bottom: 15px;
-  left: 15px;
+  /* bottom: 15px; */
+  /* left: 15px; */
+  width: 170px;
   padding: 10px 0;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: antiquewhite;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -434,7 +435,7 @@ h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: #209dd8;
+  background: #6F4E37;
 }
 
 #hero .btn-watch-video {
@@ -858,7 +859,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #4668a2;
+  background-color: #6F4E37;
 }
 
 /*--------------------------------------------------------------
@@ -1315,7 +1316,7 @@ section {
 }
 
 .pricing .featured .buy-btn:hover {
-  background: #23a3df;
+  background: #6F4E37;
 }
 
 @media (max-width: 992px) {
@@ -1600,7 +1601,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #209dd8;
+  background: #6F4E37;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1723,7 +1724,7 @@ section {
 }
 
 #footer .footer-newsletter form input[type=submit]:hover {
-  background: #209dd8;
+  background: #6F4E37;
 }
 
 #footer .footer-top {
@@ -1816,7 +1817,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #209dd8;
+  background: #6F4E37;
   color: #fff;
   text-decoration: none;
 }
@@ -1840,7 +1841,16 @@ section {
   transition: 0.3s;
 }
 
+.productImage {
+  height: 220px;
+  width: 100%;
+}
+
 @media (max-width: 768px) {
+  .productImage {
+    height: auto;
+  }
+
   #footer .footer-bottom {
     padding-top: 20px;
     padding-bottom: 20px;
