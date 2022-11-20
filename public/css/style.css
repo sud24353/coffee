@@ -1035,9 +1035,11 @@ section {
   transition: 0.3s;
 }
 
-.portfolio .portfolio-item .portfolio-info .preview-link:hover,
-.portfolio .portfolio-item .portfolio-info .details-link:hover {
+.portfolio .portfolio-item .portfolio-info .preview-link:hover {
   color: #6F4E37;
+}
+.portfolio .portfolio-item .portfolio-info .details-link:hover{
+  color: #fff;
 }
 
 .portfolio .portfolio-item .portfolio-info .details-link {
